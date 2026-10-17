@@ -4,6 +4,7 @@ import './styles/components.css';
 import './styles/sections.css';
 import './styles/venom.css';
 import './styles/voice.css';
+import './styles/mobile.css';
 
 import { birthdayConfig } from './config/birthday.config';
 import { el, requireElement } from './core/dom';

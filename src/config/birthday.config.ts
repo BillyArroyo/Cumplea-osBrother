@@ -52,10 +52,7 @@ export const birthdayConfig: BirthdayConfig = {
     autoplayDelayMs: 2500,
     volumeBoost: 3,
   },
-  seedMessages: [
-    { author: 'Tía May', text: '¡Feliz cumpleaños, cariño! Abrígate cuando salgas a columpiarte.' },
-    { author: 'Ned', text: '¡Hombre en la silla reportándose! Que este año sea legendario.' },
-  ],
+  seedMessages: [],
   backgrounds: {
     hero: undefined,
     venom: undefined,

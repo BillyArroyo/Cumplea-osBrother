@@ -88,6 +88,10 @@ export function createMessageWall(seeds: readonly SeedMessage[]): HTMLElement {
 
   function render(): void {
     const all = [...seedMessages, ...userMessages];
+    if (all.length === 0) {
+      list.replaceChildren(el('li', { className: 'wall__empty', text: '¡Sé el primero en dejarle un mensaje!' }));
+      return;
+    }
     list.replaceChildren(...all.map(bubble));
   }
 

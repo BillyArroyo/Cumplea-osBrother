@@ -1,0 +1,134 @@
+html,
+body {
+  overflow-x: clip;
+}
+
+@media (max-width: 640px) {
+  .main {
+    gap: clamp(3.5rem, 2rem + 8vw, 5rem);
+    padding-block: 4rem;
+  }
+
+  .nav {
+    top: 0.6rem;
+    padding: 0.25rem;
+  }
+
+  .nav__link {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.92rem;
+  }
+
+  .hero {
+    padding: 5rem 1rem 11rem;
+  }
+
+  .hero__content {
+    gap: 1.6rem;
+  }
+
+  .hero__stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem;
+  }
+
+  .stat:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .stat dd {
+    font-size: 1.3rem;
+  }
+
+  .hero__title-bang {
+    display: none;
+  }
+
+  .letter {
+    box-shadow: 7px 7px 0 var(--color-accent), 7px 7px 0 4px var(--color-outline);
+  }
+
+  .gallery {
+    gap: 1.4rem;
+    padding: 1.2rem 0.75rem;
+    overflow-x: clip;
+  }
+
+  .carousel__stage {
+    height: min(100vw, 420px);
+  }
+
+  .carousel__slide {
+    width: 76%;
+  }
+
+  .carousel__dots {
+    display: none;
+  }
+
+  .carousel__controls {
+    flex-wrap: nowrap;
+    gap: 1.4rem;
+  }
+
+  .carousel__nav {
+    width: 48px;
+    height: 48px;
+  }
+
+  .venom {
+    padding-inline: 0.75rem;
+  }
+
+  .venom .gallery {
+    border-radius: 28px 8px 28px 8px;
+  }
+
+  .wall__form {
+    padding: 1.2rem;
+  }
+
+  .wall__list {
+    padding-inline: 0.2rem 0.6rem;
+  }
+
+  .player,
+  .theme-toggle {
+    bottom: 0.75rem;
+    min-height: 58px;
+  }
+
+  .player {
+    left: 0.75rem;
+  }
+
+  .theme-toggle {
+    right: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .theme-toggle__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .footer {
+    padding-bottom: 6.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat:last-child {
+    grid-column: auto;
+  }
+}
